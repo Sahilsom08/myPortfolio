@@ -10,7 +10,7 @@ export const projects = [
       "Discover my portfolio website, built with React.js and some libraries. Experience a showcase of my projects and skills in a user-friendly and engaging format.",
     image: Portfolio,
     github: "https://github.com/Sahilsom08/myPortfolio",
-    demo: "https://khushipatel.dev/",
+    demo: "https://sahils-portfolioweb.netlify.app/",
   },
   {
     title: "MemeVerse",
