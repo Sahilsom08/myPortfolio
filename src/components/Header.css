@@ -1,0 +1,105 @@
+@media (min-width: 320px) and (max-width: 600px) {
+    nav {
+        .menu-icon {
+            display: block;
+            cursor: pointer;
+            margin-top: auto;
+        }
+
+        .menu-icon:hover {
+            color: rgb(254, 110, 110);
+        }
+        
+        .nav-elements {
+            position: absolute;
+            width: 0;
+            right: 0;
+            top: 71px;
+            background-color: #3f3f3f;
+            border-bottom-left-radius: 10px;
+            font-size: 20px;
+            height: calc(100vh - 60vh);
+            /* transition: all 0.3s ease-in; */
+            overflow: hidden;
+        }
+    
+        .nav-elements.active {
+            width: max-content;
+            padding-right: 40px;
+        }
+    
+        .nav-elements ul {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .nav-elements ul li {
+            margin-top: 22px;
+        }
+    }
+}
+
+.navbar {
+    font-size: 22px;
+    font-weight: 700;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid;  
+    background-color: rgb(36, 36, 36);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container h1 {
+    font-size: 30px;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.container h1:hover {
+    color: rgb(254, 110, 110);
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+}
+  
+.nav-elements ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-elements li {
+    margin-top: 6px;
+    padding: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-elements li::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(254, 110, 110);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.nav-elements li:hover::after {
+    transform: scaleX(1);
+}
+
+.links {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
