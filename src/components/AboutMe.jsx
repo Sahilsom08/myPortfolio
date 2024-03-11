@@ -3,7 +3,7 @@ import './AboutMe.css'
 import { HiOutlineDownload } from "react-icons/hi";
 import { MdOpenInNew } from "react-icons/md"
 import { FaArrowRightLong } from "react-icons/fa6"
-import Resume from "../../public/assets/pdf/Khushi-Patel-resume.pdf"
+import Resume from "../../public/assets/pdf/sahil_somwanshi_resume.pdf"
 
 function AboutMe() {
   return (
@@ -21,12 +21,12 @@ function AboutMe() {
         <button className='about--button--resume'>
           Resume
           <FaArrowRightLong size={25} style={{ marginLeft: '10px' }} />
-          <a href="https://drive.google.com/file/d/1-ARqNzfqtcuJ092o0stmlYMeBLng2MI7/view?usp=sharing" target="_blank">
+          <a href="https://drive.google.com/file/d/107ZjkEADvNjnbqYvwO8ufJjaa71OqBjP/view?usp=sharing" target="_blank">
             <button className='about--button--open'>
               <MdOpenInNew size={30} />
             </button>
           </a>
-          <a href={Resume} download="Khushi-Patel-resume.pdf">
+          <a href={Resume} download="sahil_somwanshi_resume.pdf">
             <button className='about--button--download'>
               <HiOutlineDownload size={30} />
             </button>
