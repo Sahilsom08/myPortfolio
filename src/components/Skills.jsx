@@ -1,9 +1,10 @@
-import React from 'react'
-import './Skills.css'
+import React from "react";
+import "./Skills.css";
 import {
   SiHtml5,
   SiCss3,
   SiJavascript,
+  SiTypescript,
   SiReact,
   SiNextdotjs,
   SiPython,
@@ -28,22 +29,26 @@ import { FaJava } from "react-icons/fa6";
 
 function Skills() {
   return (
-    <div id='skills' className='skills'>
+    <div id="skills" className="skills">
       <h1>Skills and Technologies</h1>
       <div className="skill--card">
-        <div className='skill--item'>
+        <div className="skill--item">
           <SiHtml5 size="5rem" />
           <p>HTML</p>
         </div>
-        <div className='skill--item'>
+        <div className="skill--item">
           <SiCss3 size="5rem" />
           <p>CSS</p>
         </div>
-        <div className='skill--item'>
+        <div className="skill--item">
           <SiJavascript size="5rem" />
           <p>JAVASCRIPT</p>
         </div>
-        <div className='skill--item'>
+        <div className="skill--item">
+          <SiTypescript size="5rem" />
+          <p>TYPESCRIPT</p>
+        </div>
+        <div className="skill--item">
           <SiReact size="5rem" />
           <p>REACT</p>
         </div>
@@ -51,35 +56,35 @@ function Skills() {
           <SiNextdotjs size="5rem" />
           <p>NEXTJS</p>
         </div> */}
-        {/* <div className='skill--item'>
+        <div className="skill--item">
           <SiNodedotjs size="5rem" />
           <p>NODEJS</p>
-        </div> */}
-        {/* <div className='skill--item'>
+        </div>
+        <div className="skill--item">
           <SiExpress size="5rem" />
           <p>EXPRESS</p>
-        </div> */}
-        {/* <div className='skill--item'>
+        </div>
+        <div className="skill--item">
           <SiMongodb size="5rem" />
           <p>MONGODB</p>
-        </div> */}
-        <div className='skill--item'>
+        </div>
+        <div className="skill--item">
           <FaJava size="5rem" />
           <p>JAVA</p>
         </div>
-        <div className='skill--item'>
+        <div className="skill--item">
           <SiCplusplus size="5rem" />
           <p>C++</p>
         </div>
-        <div className='skill--item'>
+        <div className="skill--item">
           <SiGit size="5rem" />
           <p>GIT</p>
         </div>
-        <div className='skill--item'>
+        <div className="skill--item">
           <SiGithub size="5rem" />
           <p>GITHUB</p>
         </div>
-        <div className='skill--item'>
+        <div className="skill--item">
           <SiTailwindcss size="5rem" />
           <p>TAILWIND CSS</p>
         </div>
@@ -99,27 +104,23 @@ function Skills() {
           <SiVercel size="5rem" />
           <p>VERCEL</p>
         </div> */}
-        {/* <div className='skill--item'>
+         <div className='skill--item'>
           <SiRedux size="5rem" />
           <p>REDUX</p>
         </div>
-        <div className='skill--item'>
+       {/* <div className='skill--item'>
           <SiFigma size="5rem" />
           <p>FIGMA</p>
         </div> */}
-        {/* <div className='skill--item'>
+        <div className="skill--item">
           <SiPostman size="5rem" />
           <p>POSTMAN</p>
         </div>
-        <div className='skill--item'>
-          <SiFirebase size="5rem" />
-          <p>FIREBASE</p>
-        </div> */}
+
         {/* <div className='skill--item'>
           <SiVisualstudiocode size="5rem" />
           <p>VS CODE</p>
         </div> */}
-        
       </div>
       {/* <div className="skills--section">
         <h3>Front-end: </h3>
@@ -153,7 +154,7 @@ function Skills() {
         </ul>
       </div> */}
     </div>
-  )
+  );
 }
 
-export default Skills
+export default Skills;
