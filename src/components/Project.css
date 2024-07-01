@@ -1,5 +1,5 @@
-@media (min-width: 320px) and (max-width: 480px) {
-  body {
+/* @media (min-width: 320px) and (max-width: 480px) { */
+  /* body { */
     /* .project {
       margin: 20px 20px 80px;
     }
@@ -7,8 +7,8 @@
     .project--card--container {
       margin: 35px 0;
     } */
-  }
-}
+  /* } */
+/* } */
 .heading {
   margin: 0 100px;
   margin-bottom: 40px;
@@ -19,7 +19,7 @@
   display: flex;
   position: relative;
 }
-.project--card--container::before {
+/* .project--card--container::before {
   position: absolute;
   content: "";
   left: 0;
@@ -37,7 +37,7 @@
   height: 100%;
   width: 40px;
   background-image: linear-gradient(-98deg, #192336, transparent);
-}
+} */
 .project--card--container {
   padding: 0 40px;
   display: flex;
@@ -59,12 +59,12 @@
   align-items: center;
   border-radius: 10px;
   /* background-color: rgb(128, 127, 127); */
-  box-shadow: 0 0 6px 3px hsl(190, 91%, 83%);
+  box-shadow: 0 0 6px 3px #fe6e6e;
   font-family: "quicksand", sans-serif;
 }
 
 .cards:hover {
-  box-shadow: 0 0 12px 5px hsl(190, 91%, 83%);
+  box-shadow: 0 0 12px 5px #fe6e6e;
 }
 
 .project--image--container {
@@ -97,7 +97,7 @@
 }
 
 .cards:hover h3 {
-  color: hsl(190, 91%, 83%);
+  color: hsl(200, 2%, 64%);
 }
 
 .project--info p {
@@ -130,8 +130,8 @@
 
 .project--info--button button:hover {
   background-color: rgb(51, 50, 49);
-  border-color: hsl(190, 91%, 83%);
-  color: hsl(190, 91%, 83%);
+  border-color: #fe6e6e;
+  color: #fe6e6e;
   cursor: pointer;
 }
 
