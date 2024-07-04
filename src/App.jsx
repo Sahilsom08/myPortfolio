@@ -1,40 +1,34 @@
-import React from 'react'
-import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
-import Home from './components/Home'
-import AboutMe from './components/AboutMe'
-import Skills from './components/Skills'
-import Project from './components/Project'
-import ContactForm from './components/ContactForm'
-import Footer from './components/Footer'
-import { Toaster } from 'react-hot-toast'
+import React from "react";
+import { Toaster } from "react-hot-toast";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./App.css";
+import AboutMe from "./components/AboutMe";
+import ContactForm from "./components/ContactForm";
+import Layout from "./components/Layout";
+import Project from "./components/Project";
+import Skills from "./components/Skills";
 
 function App() {
   return (
     <Router>
-        <Routes>
-          <Route path='/' 
-            element={
-              <>
-                <div className='toaster'>
-                  <Toaster
-                    position="top-center"
-                  />
-                </div>
-                <Header />
-                <Home />
-                <AboutMe />
-                <Project />
-                <Skills />
-                <ContactForm />
-                <Footer />
-              </>
-            } 
-          />
-        </Routes>
+      {/* <Header /> */}
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route path="/" element={<AboutMe />} />
+          <Route path="/projects" element={<Project />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<ContactForm />} />
+        </Route>
+      </Routes>
+      <div className="toaster">
+        <Toaster position="top-center" />
+      </div>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
+
+// project card hover
+// header navLink active state
+//resume button

@@ -1,0 +1,60 @@
+
+.skills {
+  padding: 16px;
+  width: 100%;
+}
+.skill--card {
+  margin: 16px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 120px));
+  place-content: center;
+  gap: 1.5rem;
+  transition: 0.5s ease;
+}
+
+.skill--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.skill-icons{
+  width: 4rem;
+  height: 4rem;
+}
+
+.skill--item p {
+  margin-top: 10px;
+  color: rgb(214, 214, 214);
+}
+@media (max-width: 730px) {
+  .skill--card {
+  grid-template-columns: repeat(auto-fit, minmax(80px, 80px));
+  }
+  .skill--item p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 640px) {
+  
+  .skill--card {
+  grid-template-columns: repeat(auto, minmax(60px, 60px));
+  }
+
+  .skill--item p {
+    font-size: 13px;
+  }
+  
+}
+@media (max-width: 500px) {
+  .skill-icons{
+    width: 3rem;
+    height: 3rem;
+  }
+  .skill--card {
+  grid-template-columns: repeat(auto, minmax(30px, 30px));
+  }
+
+  
+}

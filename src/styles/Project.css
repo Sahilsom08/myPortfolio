@@ -1,0 +1,142 @@
+.projects {
+  padding: 16px;
+}
+.project-card-container {
+  padding: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.cards {
+  position: relative;
+  max-width: 300px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 5px 24px hsla(0, 0%, 0%, 0.3);
+  border-radius: 20px;
+}
+.overlay {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+  border-radius: 15px;
+  background: #7b7b7b54;
+  background: linear-gradient(
+    to bottom right,
+    hsla(0, 0%, 0%, 0.45) 100%,
+    hsla(317, 16%, 70%, 0.411) 0%
+  );
+}
+
+.project-img {
+  max-height: 100%;
+  width: 100%;
+  height: 140px;
+  border-radius: 15px 15px 0px 0px;
+}
+.project-info {
+  max-height: 100%;
+  padding: 0px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.project-discription {
+  font-size: 15px;
+  line-height: 1.4;
+  color: rgb(214, 214, 214);
+
+}
+.project-title {
+  margin-top: 10px;
+}
+.git-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: none;
+  border: none;
+  background: hsl(260, 96%, 71%);
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  border-radius: 4px;
+}
+.git-icon {
+  height: 30px;
+  width: 30px;
+  color: black;
+}
+
+.cards:hover .overlay {
+  opacity: 1;
+  /* box-shadow: 0 0 10px #69686861; */
+}
+.project-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 1;
+  transition: 0.25s ease;
+}
+.cards:hover {
+  .git-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .project-card-container {
+    grid-template-columns: 1fr;
+    transition: 0.35s ease;
+  }
+  .cards {
+    max-width: 100%;
+    width: 100%;
+    max-height: 400px;
+    height: 400px;
+  }
+  .project-img {
+    max-width: 100%;
+    width: 100vw;
+    height: 200px;
+    object-fit: cover;
+  }
+  .project-discription {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 550px) {
+  .project-img {
+    object-fit: contain;
+  }
+  .cards {
+    max-height: 500px;
+    height: 420px;
+  }
+  .project-discription {
+    font-size: 13px;
+  }
+}

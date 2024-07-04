@@ -1,59 +1,47 @@
-import React from 'react'
-import './Header.css'
-import { useState } from 'react'
-import { HiMenu } from 'react-icons/hi'
-import { Link } from 'react-scroll';
-
+import React, { useState } from "react";
+import { HiMenu } from "react-icons/hi";
+import { RxCross2 } from "react-icons/rx";
+import { NavLink } from "react-router-dom";
 function Header() {
-  const [showNavbar, setShowNavbar] = useState(false)
+  const [showNavbar, setShowNavbar] = useState(false);
 
   const handleShowNavbar = () => {
-    setShowNavbar(prev => !prev);
-  }
-
- 
+    setShowNavbar((prev) => !prev);
+  };
 
   return (
     <nav className="navbar">
-      <div className="container">
-        <h1 >
-          &lt;Sahil /&gt;
-        </h1>
-        <div className="menu-icon" onClick={handleShowNavbar}>
-          <HiMenu size={25} />
-        </div>
+      <div className="nav-container">
         <div className={`nav-elements  ${showNavbar && "active"}`}>
-          <ul>
+          <ul className={`${showNavbar && "active"}`}>
             <li>
-              <Link to="home" smooth={true} offset={-120} duration={800} className='links'>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="about" smooth={true} offset={-120} duration={800} className='links'>
+              <NavLink to="/" className="links">
                 About
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="projects" smooth={true} offset={-120} duration={800} className='links'>
+              <NavLink to="projects" className="links">
                 Projects
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="skills" smooth={true} offset={-120} duration={800} className='links'>
+              <NavLink to="skills" className="links">
                 Skills
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="contact" smooth={true} offset={-120} duration={800} className='links'>
+              <NavLink to="contact" className="links">
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
+        <div className="menu-icon" onClick={handleShowNavbar}>
+          {showNavbar ? <RxCross2 size={25} /> : <HiMenu size={25} />}
+        </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Header
+export default Header;

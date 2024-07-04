@@ -1,158 +1,94 @@
 import React from "react";
-import "./Skills.css";
+import { FaJava } from "react-icons/fa6";
 import {
-  SiHtml5,
+  SiCplusplus,
   SiCss3,
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiNextdotjs,
-  SiPython,
-  SiTailwindcss,
-  SiBootstrap,
-  SiRedux,
-  SiFigma,
-  SiPostman,
+  SiExpress,
   SiGit,
   SiGithub,
-  SiNetlify,
-  SiFirebase,
-  SiVisualstudiocode,
-  SiCplusplus,
-  SiMui,
-  SiNodedotjs,
-  SiExpress,
+  SiHtml5,
+  SiJavascript,
   SiMongodb,
-  SiVercel,
+  SiNodedotjs,
+  SiPostman,
+  SiReact,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
 } from "react-icons/si";
-import { FaJava } from "react-icons/fa6";
 
 function Skills() {
   return (
-    <div id="skills" className="skills">
-      <h1>Skills and Technologies</h1>
-      <div className="skill--card">
-        <div className="skill--item">
-          <SiHtml5 size="5rem" />
-          <p>HTML</p>
-        </div>
-        <div className="skill--item">
-          <SiCss3 size="5rem" />
-          <p>CSS</p>
-        </div>
-        <div className="skill--item">
-          <SiJavascript size="5rem" />
-          <p>JAVASCRIPT</p>
-        </div>
-        <div className="skill--item">
-          <SiTypescript size="5rem" />
-          <p>TYPESCRIPT</p>
-        </div>
-        <div className="skill--item">
-          <SiReact size="5rem" />
-          <p>REACT</p>
-        </div>
-        {/* <div className='skill--item'>
-          <SiNextdotjs size="5rem" />
-          <p>NEXTJS</p>
-        </div> */}
-        <div className="skill--item">
-          <SiNodedotjs size="5rem" />
-          <p>NODEJS</p>
-        </div>
-        <div className="skill--item">
-          <SiExpress size="5rem" />
-          <p>EXPRESS</p>
-        </div>
-        <div className="skill--item">
-          <SiMongodb size="5rem" />
-          <p>MONGODB</p>
-        </div>
-        <div className="skill--item">
-          <FaJava size="5rem" />
-          <p>JAVA</p>
-        </div>
-        <div className="skill--item">
-          <SiCplusplus size="5rem" />
-          <p>C++</p>
-        </div>
-        <div className="skill--item">
-          <SiGit size="5rem" />
-          <p>GIT</p>
-        </div>
-        <div className="skill--item">
-          <SiGithub size="5rem" />
-          <p>GITHUB</p>
-        </div>
-        <div className="skill--item">
-          <SiTailwindcss size="5rem" />
-          <p>TAILWIND CSS</p>
-        </div>
-        {/* <div className='skill--item'>
-          <SiMui size="5rem" />
-          <p>MATERIAL UI</p>
-        </div> */}
-        {/* <div className='skill--item'>
-          <SiBootstrap size="5rem" />
-          <p>BOOTSTRAP</p>
-        </div> */}
-        {/* <div className='skill--item'>
-          <SiNetlify size="5rem" />
-          <p>NETLIFY</p>
-        </div>
-        <div className='skill--item'>
-          <SiVercel size="5rem" />
-          <p>VERCEL</p>
-        </div> */}
-         <div className='skill--item'>
-          <SiRedux size="5rem" />
-          <p>REDUX</p>
-        </div>
-       {/* <div className='skill--item'>
-          <SiFigma size="5rem" />
-          <p>FIGMA</p>
-        </div> */}
-        <div className="skill--item">
-          <SiPostman size="5rem" />
-          <p>POSTMAN</p>
-        </div>
+    <div className="main">
+      <div className="skills">
+        <h1 className="title">Skills and Technologies</h1>
+        <div className="skill--card">
+          <div className="skill--item">
+            <SiHtml5  className="skill-icons" color="orangeRed" />
+            <p>HTML</p>
+          </div>
+          <div className="skill--item">
+            <SiCss3  className="skill-icons" color="skyBlue"  />
+            <p>CSS</p>
+          </div>
+          <div className="skill--item">
+            <SiJavascript  className="skill-icons" color="yellow"   />
+            <p>JAVASCRIPT</p>
+          </div>
+          <div className="skill--item">
 
-        {/* <div className='skill--item'>
-          <SiVisualstudiocode size="5rem" />
-          <p>VS CODE</p>
-        </div> */}
+            <SiTypescript  className="skill-icons" color="skyBlue"  />
+            <p>TYPESCRIPT</p>
+          </div>
+          <div className="skill--item">
+            <SiReact  className="skill-icons" color="lightBlue" />
+            <p>REACT</p>
+          </div>
+
+          <div className="skill--item">
+            <SiNodedotjs  className="skill-icons" color="green" />
+            <p>NODE JS</p>
+          </div>
+          <div className="skill--item">
+            <SiExpress  className="skill-icons" />
+            <p>EXPRESS JS</p>
+          </div>
+          <div className="skill--item">
+            <SiMongodb  className="skill-icons" color="lightGreen" />
+            <p>MONGODB</p>
+          </div>
+          <div className="skill--item">
+            <FaJava  className="skill-icons" color="blue" />
+            <p>JAVA</p>
+          </div>
+          <div className="skill--item">
+            <SiCplusplus  className="skill-icons" color="lightBlue"/>
+            <p>C++</p>
+          </div>
+          <div className="skill--item">
+            <SiGit  className="skill-icons" color="red" />
+            <p>GIT</p>
+          </div>
+          <div className="skill--item">
+            <SiGithub  className="skill-icons" />
+            <p>GITHUB</p>
+          </div>
+          <div className="skill--item">
+            <SiTailwindcss  className="skill-icons" color="skyBlue" />
+            <p>TAILWIND CSS</p>
+          </div>
+
+          <div className="skill--item">
+            <SiRedux  className="skill-icons" color="voilet"/>
+            <p>REDUX</p>
+          </div>
+
+          <div className="skill--item">
+            <SiPostman  className="skill-icons" color="orange" />
+            <p>POSTMAN</p>
+          </div>
+        </div>
       </div>
-      {/* <div className="skills--section">
-        <h3>Front-end: </h3>
-        <button>HTML</button>
-        <button>CSS</button>
-        <button>JAVASCRIPT</button>
-        <button>REACTJS</button>
-      </div>
-      <div className="skills--section">
-        <h3>Frameworks: </h3>
-        <button>REACT ROUTER</button>
-        <button>CONTEXT API</button>
-        <button>TAILWIND CSS</button>
-      </div>
-      <div className="skills--section">
-        <h3>Data Science: </h3>
-        <button>PYTHON</button>
-        <button>SUPERVISED LEARNING</button>
-        <button>TENSORFLOW</button>
-      </div>
-      <div className="skills--section">
-        <h3>Other: </h3>
-        <button>C++</button>
-      </div> */}
-      {/* <div className='skills--learningPath'>
-        <h3>Learning Path:</h3>
-        <ul>
-          <li>Exploring NextJS, a powerful React framework that simplifies server-side rendering and makes building dynamic web applications a breeze.</li>
-          <li>Deepening my understanding of CSS methodologies and responsive design.</li>
-          <li>Diving into back-end technologies like NodeJS to round out my full-stack knowledge.</li>
-        </ul>
-      </div> */}
     </div>
   );
 }

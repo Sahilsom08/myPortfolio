@@ -1,0 +1,119 @@
+.home {
+  position: relative;
+  padding: 30px;
+  max-height: 500px;
+  display: flex;
+  align-items: center;
+  /* width: calc(100% - 20px); */
+  width: 100%;
+}
+.container {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.heroImg {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+}
+.info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  /* color: hsl(260, 96%, 71%); */
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.typeWriter {
+  width: 140px;
+  padding: 4px 0px;
+  display: flex;
+  justify-content: center;
+  background-color: #3b3b3b;
+  color: rgb(214, 214, 214);
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.resume-btn {
+  width: 80px;
+  position: absolute;
+  top: -0px;
+  right: -0px;
+  background-color: #3b3b3b;
+  box-shadow: -2px 5px 22px hsla(0, 0%, 0%, 0.25);
+  border-radius: 0 15px;
+  font-size: 11px;
+  outline: none;
+  letter-spacing: 1px;
+  padding: 10px 8px;
+  border: transparent;
+  cursor: pointer;
+  font-weight: 600;
+
+}
+.resume-btn a {
+  color: hsl(260, 96%, 71%);
+}
+.info-box-more {
+  display: block;
+  unicode-bidi: isolate;
+  /* display: none; */
+}
+.details {
+  display: flex;
+  gap: 30px;
+  /* flex-direction: column; */
+}
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+li {
+  list-style: none;
+}
+.icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: hsl(260, 96%, 71%);
+  /* color: #ffdb70; */
+  /* color: white; */
+  background-color: #3b3b3b;
+  box-shadow: -2px 5px 22px hsla(0, 0%, 0%, 0.25);
+}
+.detail-info {
+  max-width: calc(100% - 46px);
+  width: calc(100% - 46px);
+}
+.detail-title {
+  color: rgb(144, 143, 143);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.detail-text {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(214, 214, 214);
+}
+a {
+  display: block;
+  text-decoration: none;
+}
