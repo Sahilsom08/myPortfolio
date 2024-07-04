@@ -29,6 +29,4 @@ function App() {
 
 export default App;
 
-// project card hover
-// header navLink active state
-//resume button
+
