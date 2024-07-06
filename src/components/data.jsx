@@ -8,7 +8,7 @@ export const projects = [
   {
     title: "Snapshop",
     description:
-      "Welcome to the eCommerce Platform Project, built with the MERN stack (Redux, TypeScript, Sass). This project offers a robust and feature-rich online shopping experience designed to empower businesses.",
+      "Welcome to the eCommerce Platform Project, built with the MERN stack, (Redux, TypeScript, Sass). This project offers a robust and feature-rich online shopping experience designed to empower businesses.",
     image: ecommerce,
     github: "https://github.com/Sahilsom08/Ecommerce_Frontend",
   },
@@ -22,7 +22,7 @@ export const projects = [
   {
     title: "My-Portfolio",
     description:
-      "Discover my portfolio website, built with React.js and some libraries. Experience a showcase of my projects and skills in a user-friendly and engaging format.",
+      "Discover my portfolio website, built with React.js and CSS. Experience a showcase of my projects and skills in a user-friendly and engaging format.",
     image: Portfolio,
     github: "https://github.com/Sahilsom08/myPortfolio",
   },
